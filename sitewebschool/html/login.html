@@ -1,0 +1,66 @@
+<!-- <?php
+session_start();
+$connection = mysqli_connect('localhost', 'root', '', 'flink');
+if (isset($_POST['send'])) {
+    $nom = $_POST['nom'];
+    $mot-passe = $_POST['mot-passe'];
+    $sql = "SELECT id,mot-passe FROM client WHERE nom='$nom'";
+    $result = mysqli_query($connection, $sql);
+    if (mysqli_num_rows($result) == 0) {
+        echo "You don't have an account.";
+    } else {
+        $row = mysqli_fetch_assoc($result);
+        if ($row['mot-passe'] === $mot-passe) {
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['mot-passe'] =$row['mot-passe'];
+            header('location:index.html');
+            exit;
+        } else {
+            echo" <p class='msgeror' style='font-weight: bold;'>mot passe ou nom sont incorect</p>";
+        }
+    }
+}
+?> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+       
+</head>
+<body>
+  
+
+</div>
+    <div class="pourloogin">
+        <form action="">
+          <h1>Se connecter</h1>
+          <div class="donnerusr">
+            <input type="text" placeholder="Enter Votre nom" required>
+          
+          </div>
+          <div class="donnerusr">
+            <input type="mot-passe" placeholder="Enter Votre mot passe" required>
+           
+          </div>
+          <div class="motpasseobl">
+            <a href="#">mot passe oblier?</a>
+          </div>
+<!--           jai fait cette a pour le button se connecter parceque pas une base de  donner pour verifier si les donner existe dans la premier page il y a un code de php mais pas complete  -->
+          <button type="submit" class="btnlogin"><a href="index1.html" style="text-decoration: none; color: black;">Se connecter</a> </button>
+          <div class="btndesignup">
+            <p>Je n'ai pas de compte? <a href="signup.html">s'inscrire</a></p>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

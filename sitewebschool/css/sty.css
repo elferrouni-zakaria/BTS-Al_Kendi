@@ -1,0 +1,401 @@
+*{
+   
+    font-family: "Poppins", sans-serif;
+
+  }
+
+header{
+	background-image:linear-gradient(rgba(32, 31, 31, 0.5),rgba(0,0,0,0.5)), url(../img/lycee.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 150px;
+	padding-left: 20px;
+	align-items: center;
+}
+
+
+
+ul{
+	margin-top: 40px;
+	margin-right: 50px;
+	padding: auto;
+	/*element float pour la navbar à droit de logo al kendi */
+	padding-right: 150px;
+	
+}
+li{
+
+	margin: 5px;
+}
+ul li a:hover{
+	background-color: rgb(177, 126, 68);
+	color: #000;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	
+	color: white;
+	padding: 5px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+
+
+ul li.active a{
+	background-color:rgb(177, 126, 68);
+	color: #000;
+
+}
+
+.contentbienvenue{
+	width: 100%;
+	text-align: center;
+	color: white;
+
+}
+
+.contentbienvenue h2{
+	font-size: 50px;
+	padding-bottom: 30px;
+	padding-top: 0px;
+	margin-top: 50px;
+}
+
+.button{
+
+	width: 200px;
+	padding: 15px 0px;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 1px solid rgb(177, 126, 68);
+	background-color: transparent;
+	color: white;
+}
+
+.button:hover{
+	background-color: rgb(177, 126, 68);
+
+}
+
+.logoalkendi img{
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.navbar{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+
+
+
+
+
+
+.choix{
+	display: none;
+    top:8%;
+}
+
+
+
+.navbar ul li:hover .choix
+{
+	display: block;
+	margin-top: 12px;
+	
+}
+
+.navbar ul li:hover .choix ul 
+{
+	display: block;
+	margin:5px;
+
+}
+.navbar ul li:hover .choix ul li
+{
+	width: 75px;
+	padding: 2px;
+
+	text-align: left;
+	border-radius: 10px;
+	
+}
+
+.navbar ul li:hover .choix ul li:last-child 
+{
+	border-bottom: none;
+}
+
+
+
+.alkendihist{
+	height: 80%;
+	width: 80%;
+	margin-left:130px;
+	display: flex;
+	align-items: center;
+	word-spacing: 2px;
+	letter-spacing: 0.5px;
+	background-color:  rgb(177, 126, 68);
+	border-radius: 40px;
+	padding-left: 20px;
+
+
+	
+
+}
+.alkendihist:hover{
+	background-color: rgb(222, 158, 84);
+}
+
+.imgalke{
+	width: 50%;
+	border-radius: 0px 40px 40px 0px;
+}
+
+
+.Histoire_Al_Kendi{
+	font-size: 40px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.submitkendi{
+	
+		
+	color: black;
+	padding: 10px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+	border: none;
+	background-color: rgb(222, 158, 84);
+}
+
+.submitkendi:hover{
+	background-color:  rgb(177, 126, 68);
+	color: #000;
+}
+
+.nous{
+	background: url(../img/STUDY.jpg);
+	height: 400px;
+
+
+	
+}
+.din{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+.Filieres{
+	display: flex;
+	padding: 100px 10% 80px ;
+	justify-content: space-between;
+	
+}
+
+.filie{
+	text-align: center;
+	padding-top: 40px;
+	
+}
+
+.plus{
+	background-color: rgb(177, 126, 68);
+	color: #000;
+	direction: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	border: none;
+}
+
+
+.plus:hover{
+	color: white;
+	background-color: rgb(222, 158, 84);
+	
+}
+
+
+.cliqplus{
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.decouvrere{
+	background-color: rgb(177, 126, 68);
+	color: #000;
+	direction: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	border: none;
+}
+
+.decouvrere:hover{
+
+	border: 1.5px solid black;
+}
+
+.table{
+
+	padding: 100px;
+	line-break: loose;
+}
+
+/* pour footer */
+footer {
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+  
+}
+
+.alkendiaproposfooter {
+    background-color: rgb(21, 21, 32);
+    width: 100%;
+    text-align: left;
+    font: bold ;
+	font-size: 20px;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.alkendiaproposfooter .logoandnav, .alkendiaproposfooter .zz, .alkendiaproposfooter .nousthem {
+    display: inline-block;
+}
+
+
+
+.alkendiaproposfooter .logoandnav {
+    width: 30%;
+}
+
+.alkendiaproposfooter h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.alkendiaproposfooter h3 span {
+    color :rgb(222, 158, 84);
+	
+    font:  36px 'Cookie', cursive;
+}
+
+
+.alkendiaproposfooter .hapcoblo {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.alkendiaproposfooter .hapcoblo a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: white;
+}
+
+.alkendiaproposfooter .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+.alkendiaproposfooter .zz {
+    width: 35%;
+}
+
+.alkendiaproposfooter .zz i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+}
+
+.alkendiaproposfooter .zz i.fa-envelope {
+    font-size: 17px;
+}
+
+.alkendiaproposfooter .zz p {
+    display: inline-block;
+    color: #ffffff;
+    margin: 20px;
+}
+
+.alkendiaproposfooter .zz p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.alkendiaproposfooter .zz p a {
+	color: rgb(222, 158, 84);
+    text-decoration: none;
+    
+}
+
+
+.alkendiaproposfooter .nousthem {
+    width: 30%;
+}
+
+.alkendiaproposfooter .proalkendi {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.alkendiaproposfooter .proalkendi span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+	
+    font:  36px 'Cookie', cursive;
+}
+
+.alkendiaproposfooter  {
+    margin-top: 0px;
+}
+
+
+
+.alkendiaproposfooter  a:hover {
+	color: rgb(222, 158, 84);
+}
+
+.hapcoblo a:hover {
+	color: rgb(222, 158, 84);
+}
+

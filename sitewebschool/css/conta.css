@@ -1,0 +1,117 @@
+.contact_efe{
+     
+    background-color:rgb(177, 126, 68);
+    
+    color: #000;
+
+}
+
+
+section{ 
+    background-image: url(../img/school.jpg);
+    
+    background-color:rgb(177, 126, 68);
+    font-size: 100%;
+    background-repeat: no-repeat;
+    color: #000;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.contactnous {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.enteconta {
+  margin-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.enteconta h2 {
+    color: #000;
+    font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.enteconta p {
+    color: #000;
+}
+
+.row  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+.contactn {
+    padding: 50px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-left: 60%;
+    margin-top: -203px
+}
+
+.contactn h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contactn .indonnerusr {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactn .indonnerusr input,
+.contactn .indonnerusr textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+.contactn .indonnerusr span {
+  padding: 10px 0px;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #666;
+}
+
+
+.contactn .indonnerusr input[type="submit"]
+{
+  width: 100%;
+  background: #000000;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #000000;
+  transition: 0.5s;
+}
+
+.contactn .indonnerusr input[type="submit"]:hover
+{
+  background: #FFF;
+  color: rgb(177, 126, 68);
+}
+

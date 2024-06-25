@@ -1,0 +1,50 @@
+<!-- 
+<?php 
+$connection = mysqli_connect('localhost' , 'root' , '' , 'flink') ; 
+db c'est flink
+if(isset($_POST['send'])){
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    $sql = "INSERT INTO client (nom, prenom, email, mot-passe) VALUES ('$nom', '$prenom', '$email', '$mot-passe')";
+mysqli_query($connection , $sql) ; 
+}
+mysqli_close($connection);
+?>
+
+    -->
+   
+   
+   
+   <html lang="en">
+      <head>
+        <title>inscrire</title>
+        <link rel="stylesheet" href="../css/signup.css" />
+       
+       
+      </head>
+      <body>
+        <div class="inscri">
+          <h1>S'inscrire</h1>
+          <h4>BIENVENUE à al kendi</h4>
+          <form>
+            <label>nom</label>
+            <input type="text" placeholder="Enter Votre nom" >
+            <label>prenom</label>
+            <input type="text" placeholder="Enter Votre prenom" >
+            <label>Email</label>
+            <input type="email" placeholder="Enter Votre Email" >
+            <label>mot passe</label>
+            <input type="password" placeholder="Enter Votre mot passe" >
+            <a href="index1.html">
+            <input type="button" value="Envoyer" class="button"></a>
+          </form>
+          <p class="secone">
+            Vous avez déjà un compte? <a href="login.html">Se connecter</a>
+        </p>
+        </div>
+      
+      </body>
+    </html></span>

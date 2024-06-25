@@ -1,0 +1,269 @@
+<!-- 
+<?php
+session_start();
+$connection = mysqli_connect('localhost', 'root', '', 'flink');
+if (isset($_POST['send'])) {
+    $nom = $_POST['nom'];
+    $password = $_POST['password'];
+    $sql = "SELECT id,password FROM client WHERE nom='$nom'";
+    $result = mysqli_query($connection, $sql);
+    if (mysqli_num_rows($result) == 0) {
+        echo "You don't have an account.";
+    } else {
+        $row = mysqli_fetch_assoc($result);
+        if ($row['password'] === $password) {
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['password'] =$row['password'];
+            header('location:index.html');
+            exit;
+        } else {
+            echo" <p class='msgeror' style='font-weight: bold;'>mot passe ou nom sont incorect</p>";
+        }
+    }
+}
+?>
+
+
+          jai fait cette a pour le button se connecter parceque pas une base de  donner pour verifier si les donner existe dans la premier page il y a un code de php mais pas complete  
+ -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>al kendi</title>
+	<link rel="stylesheet" type="text/css" href="../css/sty.css">
+ 
+
+</head>
+<body>
+	<header>
+	<div class="navbar">
+			<div class="logoalkendi"><img src="../img/alkendilogonoback.png" alt="logol lycee_alkendi"></div>
+		
+		 <ul>
+		 <li class="active"><a href="#"><strong class="home">Accueil</strong></a></li>
+		 <li><a href="a-propos.html" target="_blank"><strong>A proprs</strong> </a></li>
+		 <li><a href="excours.html" target="_blank"><strong>cours et exercices</strong></a></li>
+<!-- 		 
+		 <li><a href="offres.html" target="_blank"><strong>offres</strong> </a></li>
+		 <li><a href="filie.html" target="_blank"><strong>Filieres</strong> </a></li> -->
+		 <li><a href="blog.html" target="_blank"><strong>Blog</strong> </a></li>
+		 <li><a href="contact.html" target="_blank"><strong>contact</strong> </a></li>
+		
+		</ul>
+
+		
+
+	</div>
+	<div class="contentbienvenue">
+		<h2>BIENVENUE</h2>
+		<h1>Élever l’éducation au sommet</h1>
+		<br><br>
+		<div>
+			<a href="signup.html" target="_blank">
+		<input type="submit" value="s'inscrire" id="button_signup" class="button"></a>
+		<a href="login.html" target="_blank">
+		<input type="submit" value="se connecter" id="button_login" class="button"></a>
+		</div>
+		</div>
+	
+	
+	</header>
+
+
+	<div class="alkendihist">
+		
+		
+		<P>
+			<strong class="Histoire_Al_Kendi">Histoire Al Kendi</strong> <br>
+			<br>
+			Abu Yusuf Yaqoub Ibn Ishaq Al-Sabah Al-Kendi, un érudit connu comme philosophe arabe,
+			 excellait en physique, chimie, médecine, mathématiques, astronomie, musique,
+			  psychologie et logique. Al-Kendi est considéré comme le premier philosophe itinérant
+			   musulman et il a travaillé dur pour initier les Arabes et les musulmans à la philosophie
+			    grecque antique.
+			<br>
+			<br>
+			<a href="blog.html">
+		<input  class="submitkendi" type="submit" value="voir plus" ></P>
+	</a>
+		
+		<img  class="imgalke" src="../img/alkendiphoto.jpg" alt="alkendiphoto">
+
+</div>
+
+
+	<h2 class="filie">Filieres</h2>
+	<div class="Filieres">
+	<div class="AI" class="space">
+		<H3>Développement de L’intelligence Artificielle (DAI)</H3>
+		<br>
+		<a href="blog.html" target="_blank">
+			<input type="submit" value="plus" src="blog.html"class="plus"></a>
+		
+	</div>
+	<div class="DSI" class="space">
+		<H3>Développement des Systèmes D’information (DSI)</H3>
+		<br>
+		<a href="blog.html" target="_blank">
+		<input type="submit" value="plus" src="blog.html"class="plus" href="blog.html"></a>
+	</div>
+	<div class="CG" class="space">
+		<H3>Comptabilité et Gestion (CG)</H3>
+		<br>
+		<a href="blog.html" target="_blank">
+		<input type="submit" value="plus" src="blog.html"class="plus" href="blog.html"></a>
+	</div>
+</div>
+<P class="cliqplus">Pour en savoir plus, cliquez sur plus</P>
+</div>
+<div class="nous"><br>
+	
+	<img src="../img/alkendilogonoback.png" alt="logo-alkendi">
+	<div class="din">
+	<p>REJOIGNEZ-NOUS POUR</p><br>
+	<h2>Faire demain meilleur avec Al Kendi</h2><br>
+	<a href="contact.html" target="_blank">
+	<input type="submit" value="Découvrere plus" class="decouvrere"></a>
+</div>
+</div>
+
+<div class="pounous" >
+	<table class="table">
+		<tr>
+		  <th>
+			<img src="../img/alkendilogonoback.png" alt="logo_alkendi">
+		  </th>
+		  <th><h2>Temps De formation</h2></th>
+		 	</tr>
+			
+			<tr>
+				<td style="text-align: center;"><strong>POURQUOI NOUS CHOISIR</strong><br></td>
+				<td><P>La formation s’étend sur deux années durant lesquelles
+					l’étudiant pourra intégrer le marché du travail ou continue ses études.</P>
+			</td>
+				
+			</tr>
+			<tr></tr>
+			
+			<tr>
+				<th><h2>Notre Proposition de Valeur Unique</h2><br></th>
+					<th><h2>Ouverture internationale</h2></th>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td><P>Découvrez ce qui distingue le BTS Al Kendi de l’enseignement traditionnel.</P></td>
+				<td>	<p>Des programmes internationaux pour une vision globale 
+					et une ouverture sur le monde. À l’aide des déférentes 
+					filière que contient BTS AL KENDI .</p>
+			</td>
+			</tr>
+			<tr></tr>
+
+			<tr>
+				<th></th>
+				<th><h2>Stage en entreprise</h2></th>
+				
+			</tr>
+
+			<tr>
+				<th></th>
+				<td>
+					<p>Après chaque années de cette formation nous payons nos étudiants 
+						pour faire un stage pratique dans une entreprise
+						<br>
+						Une expérience pratique en entreprise pour préparer nos étudiants à la vie professionnelle.</p>
+				
+				</td>
+				
+			</tr>
+		
+	
+	  </table>
+
+	<div>
+		
+	</div>
+
+	
+
+	
+</div>
+
+<div class="Témoignages">
+	<h2 style="text-align: center;">Témoignages de nos étudiants</h2>
+	<br><br>
+	<H3>AMINE</H3>
+	<div>BTS Al Kendi est donne une bon formation avec une excellente expérience d’étude
+		
+			
+		</div>
+		<hr>
+		<br><br>
+		<h3>khadija</h3>
+	<div>Dans notre centre BTS, les étudiants bénéficient d’un environnement d’apprentissage moderne et dynamique. Avec des enseignants qualifiés et des installations de pointe, les étudiants sont préparés à réussir dans leur domaine. .
+
+		</div><hr>
+		<br><br>
+		<h3>zakaria</h3>
+	<div>L’interaction et la collaboration sont encouragées pour favoriser un apprentissage enrichissant. Les étudiants acquièrent des compétences essentielles pour leur future carrière, tout en développant des valeurs telles que le leadership et l’intégrité.
+
+		</div>
+		
+</div>
+
+<br><br>
+
+
+ 
+
+<footer class="alkendiaproposfooter">
+
+	<div class="logoandnav">
+		<h3>AL <span>KENDI</span></h3>
+
+		<p class="hapcoblo">
+			<!-- cest a dire h home ap apropos blo blog -->
+			<a href="#">Accueil</a>
+			<span>/</span>
+			<a href="a-propos.html">A-propos</a>
+			<span>/</span>
+			<a href="contact.html">contact</a>
+			<span>/</span>
+			<a href="blog.html">Blog</a>
+		</p>
+
+		</div>
+
+	<div class="zz">
+		<div>
+			<p><span>al kendi</span>
+				</p>
+		</div>
+
+		<div>
+			<p>+212 678-77-91-77</p>
+		</div>
+		<div>
+
+			<p><a href="zakariaelferrouni@gmail.com">alkendibts@gmail.com</a></p>
+		</div>
+	</div>
+	<div class="nousthem">
+		<p class="proalkendi">
+			<span>A propose de al kendi</span>
+			<strong>al kendi</strong> est une Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque voluptatem ea reprehenderit soluta. Ad nobis pariatur unde, iste distinctio adipisci ut. Natus illo cupiditate omnis impedit qui facere doloremque.	
+		</p>
+		
+	</div>
+	
+</footer>
+
+</body>
+</html>

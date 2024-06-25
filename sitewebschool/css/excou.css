@@ -1,0 +1,38 @@
+
+.excours{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 500px;
+
+}
+
+.cour{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(177, 126, 68);
+
+}
+.cour:hover{
+    
+    color: rgb(222, 158, 84);
+
+}
+
+.execorg{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.coursefe{
+        background-color:rgb(177, 126, 68);
+        color: #000;
+    
+    
+}
+
